@@ -4,11 +4,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SearchPage from "./pages/SearchPage"
 import FavoritesPage from "./pages/FavoritesPage"
 import HomePage from "./pages/HomePage"
+import HeaderNavBar from "./components/HeaderNavBar"
 
 function App() {
+  
   return (
     <Router>
-      <div className="App"></div>
+      <div className="App">
+      <HeaderNavBar />
       <Switch>
 
         <Route exact path="/">
@@ -24,6 +27,7 @@ function App() {
         </Route>
 
       </Switch>
+      </div>
     </Router>
   );
 }

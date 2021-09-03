@@ -4,6 +4,7 @@ import {
     ListGroup,
     ListGroupItem,
   } from "react-bootstrap";
+  import RandomBeer from "../components/RandomBeer";
 
 function FavoritesPage() {
     const books = useSelector((state) => state.books);
@@ -28,6 +29,7 @@ function FavoritesPage() {
             </Card>
           );
         })}
+        <RandomBeer />
       </div>
     )
 }
